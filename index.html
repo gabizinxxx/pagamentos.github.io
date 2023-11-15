@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pagamento</title>
+  
+</head>
+<body>
+    <div class="container">
+        <h2>Termine sua compra</h2>
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Nome série e turma:</label>
+                <input type="text" id="name" name="name" placeholder="ex: José 1 info mat" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail">
+            </div>
+            <div class="form-group">
+                <label for="name">Quantidade de Brigadeiros e sabor:</label>
+                <input type="text" id="name" name="name" placeholder="Ex: 2 brigadeiros de chocolate" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Pagamento</label>
+                <input type="text" id="name" name="name" placeholder="Dinheiro/Pix" required>
+            </div>
+             <button type="submit">Finalizar</button>
+
+            <input type="hidden" name="accessKey" value="7214a4a9-e22a-4b95-971d-edf8bb8c08b2">
+            <input type="hidden" name="redirectTo" value="https://brigashow.netlify.app/">
+        </form>
+    </div>
+    <footer>
+    <p>&copy; 2023 Brigashow</p>
+    </footer>
+</body>
+</html>
